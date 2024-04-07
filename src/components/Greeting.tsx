@@ -31,7 +31,7 @@ function Greeting() {
 
     return (
         <div style={{marginTop: '2.5rem', marginLeft: '2rem'}}>
-            <div style={{fontSize: '4rem'}}>
+            <div style={{fontSize: '4rem', fontWeight: 'bold'}}>
                 {greeting}
             </div>
             <div style={{fontSize: '3rem'}}>

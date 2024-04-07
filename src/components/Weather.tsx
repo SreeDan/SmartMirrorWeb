@@ -60,7 +60,7 @@ function Weather() {
                     <div style={{marginTop: '60px'}}>{temperature}</div> <span style={{marginLeft: '5px', marginTop: '1.5em', verticalAlign: 'top', fontSize: 40}}>°F</span> <br />
                 </div>
                 {/* <div style={{textAlign: 'center', fontSize: '1.5rem'}}>Atlanta, Georgia</div> */}
-                <div style={{fontSize: 20, marginLeft: '0.5em', marginTop: '-3rem'}}>
+                <div style={{fontSize: 25, marginLeft: '0.5em', marginTop: '-3rem'}}>
                     <ul style={{display: 'inline-flex', listStyleType: 'none'}}>
                         <li style={{display: 'inline-block', marginRight: '1.5rem'}}>{description}</li>
                         <li style={{display: 'inline-block', marginRight: '1.5rem'}}>Feels like {feelsLike}</li>
