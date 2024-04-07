@@ -53,20 +53,22 @@ function Weather() {
     }
 
     return (
-        <div style={{display: "inline-flex"}}>
+        <div>
             <div style={{marginRight: '10px'}}>
                 <div style={{display: "inline-flex", fontSize: 60}}>
                     <img src={weatherImage} alt="image" width="200" height="200" /> <br />
-                    <div style={{marginTop: '60px'}}>{temperature}</div> <span style={{marginLeft: '5px', marginTop: '60px', verticalAlign: 'top', fontSize: 30}}>°F</span> <br />
+                    <div style={{marginTop: '60px'}}>{temperature}</div> <span style={{marginLeft: '5px', marginTop: '1.5em', verticalAlign: 'top', fontSize: 40}}>°F</span> <br />
                 </div>
-                <div style={{textAlign: 'center', fontSize: 20}}>Atlanta, Georgia</div>
+                {/* <div style={{textAlign: 'center', fontSize: '1.5rem'}}>Atlanta, Georgia</div> */}
+                <div style={{fontSize: 20, marginLeft: '0.5em', marginTop: '-3rem'}}>
+                    <ul style={{display: 'inline-flex', listStyleType: 'none'}}>
+                        <li style={{display: 'inline-block', marginRight: '1.5rem'}}>{description}</li>
+                        <li style={{display: 'inline-block', marginRight: '1.5rem'}}>Feels like {feelsLike}</li>
+                        <li style={{display: 'inline-block'}}>{extraDescription}</li>
+                    </ul>
+                </div>
             </div>
-            <div style={{fontSize: 30, marginLeft: '20px', marginTop: '40px'}}>
-                
-                {description} <br />
-                Feels like {feelsLike} <br />
-                {extraDescription}
-            </div>
+            
         </div>
     )
 
