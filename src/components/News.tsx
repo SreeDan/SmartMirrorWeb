@@ -60,11 +60,11 @@ function News() {
 
     return (
         <div style={{marginLeft: '2rem'}}>
-            <div style={{fontWeight: 'bold', fontSize: '4rem', textDecoration: 'underline', display: 'inline-flex'}}>
+            <div style={{fontWeight: 'bold', fontSize: '4rem', display: 'inline-flex'}}>
                 <div style={{marginRight: '0.5rem', marginTop: '0.5rem'}}><FaRegNewspaper /></div>
                 Headlines
             </div>
-            <ul style={{listStyleType: 'none', marginLeft: '-2rem'}}>
+            <ul style={{listStyleType: 'none', marginLeft: '-2rem', marginTop: '-1rem'}}>
                 {getListElementsFromEvents()}
             </ul>
 
