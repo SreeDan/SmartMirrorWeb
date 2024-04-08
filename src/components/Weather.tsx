@@ -13,7 +13,7 @@ function Weather() {
         const TEN_MINUTES_MS = 600000
 
         const interval = setInterval(() => {
-            // getWeather()
+            getWeather()
           }, TEN_MINUTES_MS);
         
           return () => clearInterval(interval)
